@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pull"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:imeOptions="actionGo"
+            android:drawableLeft="?android:attr/actionModeWebSearchDrawable"
+            android:inputType="textPersonName"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary"
+            android:hint="Movie or Serie name" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search"
+            android:id="@+id/srch"
+            android:gravity="center"
+            android:text="Search"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</ScrollView>
